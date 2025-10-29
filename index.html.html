@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    
+    <style>
+       header{width: 100%; 
+             height: 50px;
+             float: left;
+             box-sizing:border-box ;
+             padding: 6px;
+
+        }
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #brand{
+            padding: 0%;
+            margin: 0%;
+           font-family: sans-serif;
+           float: left;
+           margin-left: 50px;
+        }
+        #tag_line{
+            float: right;
+            color: red;
+            padding: 0;
+            margin: 0%;
+            margin-top: 10px;
+            font-family: century  Gothic ;
+            width: 50%;
+            
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(187, 85, 102);
+            float: left;
+            box-sizing: border-box ;
+            padding: 30px;
+            
+        }
+        #search{
+            width: 400px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 15px;
+            padding: 10px;
+
+        }
+        #search_btn{
+            width: 100px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            margin-left: 3px; 
+            font-size: 16px;
+            
+
+
+        }
+        #menu_table{
+            width: 600px;
+            height: 40px;
+            float: right;
+            box-sizing: border-box;
+
+        }
+        #menu_item{
+            background-color: bisque;
+            width: 20px;
+            text-align: center;
+             
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        section{
+        width: 100%;
+        height: 1650px;
+        float: left;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        border-color: greenyellow;
+        padding: 30px;
+    }
+    #venue{
+        float: left;
+    }
+    #phone{
+        float: right;
+    }
+    #popular-sweets-box{
+        width: 720px;
+        height: 550px;
+        float: left;
+        box-sizing: border-box;
+        background-color: brown;
+        margin-top: 30px;
+        padding: 25px;
+
+    }
+    #popular-sweets-title{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: sans-serif;
+        margin: 0%;
+        padding: 0%;
+
+    }
+    #popular-sweet-image{
+        width: 300px;
+        height: 200px;  
+        margin: 15px;
+        border: solid ghostwhite 5px;
+        box-sizing: border-box;
+
+    }
+    #rate_list_box{
+        width: 450px;
+        height: 550px;
+        float: right;
+        box-sizing: border-box;
+        margin-top: 30px;
+        
+    }
+    #sweet_hader{
+        height: 50px;
+        background-color: blanchedalmond;
+        text-align: center;
+        font-family: century Georgia;
+        font-size: 25px;
+        }
+        #rate_content{
+            background-color: brown;
+        }
+        #s_name{
+
+            color:aqua;
+            font-family: century georgia ;
+            font-size: 22px;
+            padding: 10px;
+            border-bottom-width:2px ;
+            border-bottom-style: solid;
+            border-bottom-color: azure;
+        }
+        #rate{
+           list-style-type: none; 
+        }
+        fieldset{
+            width: 690px;
+            height: 550px;
+            float: left;
+            margin-top: 50px;
+            border-width: 1px;
+            border-color: grey;
+            border-style: solid;
+            padding: 10px;
+        }
+        legend{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: rgb(243, 207, 164);
+            font-weight: bold;
+        }
+        #order_online{
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+        #order_input{
+            width: 100%;
+            height: 35px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid ;
+            border-color: gray;
+            margin-top: 5px;
+
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+              border-width: 1px;
+            border-style: solid ;
+            border-color: gray;
+
+        }
+        #submit_btn{
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+             box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid ;
+            border-color: grey;
+            margin-top: 5px;
+            background-color: white;
+
+        }
+        #submit_btn:hover{
+            background-color: aqua;
+            border-color: yellow;
+
+        }
+        #abt_us{
+            width: 450px;
+            height: 565px;
+            float: right; 
+             border-width: 1px;
+            border-style: solid ;
+            border-color: gray;
+            margin-top: 50px;
+            padding: 20px;
+            box-sizing: border-box;
+
+
+        }
+        #abt-title{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        #abt_text{
+            text-align: justify;
+            font-family: sans-serif;
+            line-height: 24px;
+        }
+        
+        #m_Sweets{
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+            
+        }
+        #more_sweets{
+            font-size:30 ;
+            text-align: center;
+            font-family: sans-serif;
+            
+        }
+        #sweets{
+            width: 218px;
+            height: 270px;
+            border-width:1px ;
+            border-color: gray;
+            border-style: solid;
+            float: left;
+            margin-right: 46px;
+        }
+        #sweets_end{
+             width: 218px;
+            height: 270px;
+            border-width:1px ;
+            border-color: gray;
+            border-style: solid;
+            float: left;
+        }
+        #sweet_pic{
+            width: 220px;
+            height: 220px;
+            
+
+    }
+    #sweet_pic_end{
+        width: 200px;
+        height: 180px;
+        margin: 18px;
+    }
+    #sweet_pic2{
+        width: 200px;
+        height: 190px;
+        margin: 15px;
+
+    }
+    #buy_btn{
+         
+        padding: 10px;
+            font-size: 15px;
+             box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid ;
+            border-color: grey;
+            background-color: white;
+            margin-top: 2px;
+           
+    }
+    #buy_btn:hover{
+        background-color: aqua;
+        border-color:yellow ;
+    }
+    footer{
+        width: 100%;
+        height: 250px;
+        box-sizing: border-box;
+        float: left;
+        background-color:black ;
+        margin-top: 1720px;
+    }
+    #contact_us{
+        width: 400px;
+        height: 250px;
+        box-sizing: border-box;
+        float: left;
+        border-width: 1px;
+        border-style:solid ;
+        border-color: aqua;
+
+    }
+    #social_link{
+
+        width: 400px;
+        height: 250px;
+        box-sizing: border-box;
+        float: right;
+        border-width: 1px;
+        border-style: solid;
+        border-color:aqua ;
+    }
+    #contect_title{
+        color: white;
+        font-family: sans-serif;
+        text-align: justify;
+        padding: 10px;
+        padding-left: 30px;
+    }
+    #contect_details{
+        font-family: sans-serif;
+        color: white;
+        font-size: 20px;
+        font-style: normal;
+        margin-bottom: 13px;
+        padding-left: 10px;
+
+
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 id="brand"> sweetshop.com </h1>
+       <p id="tag_line"> <marquee direction="right"> The world's largest sweets & bakeries shop</marquee></p>
+<nav>
+<form>
+    <input  type="search" name="search"placeholder="search your sweet here!" id="search">
+    <input type="submit" value="search" id="search_btn">
+</form>
+<table id="menu_table">
+    <tr>
+    <td id="menu_item"><a href="">HOME</a></td>
+    <td id="menu_item"> <a href="">SWEETS</a></td>
+    <td id="menu_item"> <a href="">BACKERIES</a></td>
+    <td id="menu_item"><a href="">ABOUT US</a></td>
+    <td id="menu_item"><a href="">CONTECT US</a></td>
+    </tr>
+</table>
+</nav>
+
+<section>
+<address id="venue">
+    Venue : Dantli Goner Road Jaipur-303012 
+</address>
+<address id="phone">Order Online : +91 8890256019 , 7690054380</address>
+<div id="popular-sweets-box">
+    <h1 id="popular-sweets-title" title="Plz select Your favrait sweets ">Our Popular Sweets </h1>
+    
+    
+    <img src="Image/a.jpeg" alt="gulab-jamun" id="popular-sweet-image"/>
+    <img src="Image/c.jpeg" alt="c.jpeg " id="popular-sweet-image"/>
+    <img src="Image/d.jpeg" alt="d.jpeg" id="popular-sweet-image"/>
+    <img src="Image/e.jpg" alt="e.jpg"   id="popular-sweet-image"/>
+
+
+    
+</div>
+
+
+<table id="rate_list_box" >
+    <tr>
+        <td id="sweet_hader"> Sweets Name</td>
+        <td id="sweet_hader"> Sweet Price</td>
+
+    </tr>
+
+
+    <tr>
+        <td id="rate_content">
+            <ol>
+                <li id="s_name">Sonpapdi</li>
+                <li id="s_name">Rasgulaa</li>
+                <li id="s_name">gulab-jamun</li>
+                <li id="s_name">Mava ki Barfi</li>
+                <li id="s_name">Kaju ki Barfi</li>
+                <li id="s_name">Jalebi</li>
+                <li id="s_name">Rashmalai</li>
+                <li id="s_name">Laddu</li>
+                <li id="s_name">Basan ke Laddu</li>
+                <li id="s_name">Khirmohan</li>
+
+
+            </ol>
+        </td>
+        <td id="rate_content">
+            <ol id="rate">
+                <li id="s_name">150/kg</li>
+                <li id="s_name">350/kg</li>
+                <li id="s_name">400/kg</li>
+                <li id="s_name">400/kg</li>
+                <li id="s_name">750/kg</li>
+                <li id="s_name">120/kg</li>
+                <li id="s_name">372/kg</li>
+                <li id="s_name">140/kg</li>
+                <li id="s_name">150/kg</li>
+                <li id="s_name">370/kg</li>
+
+
+            </ol>
+
+        </td> 
+    </tr>
+    
+</table>
+
+
+<fieldset id="frm_box" >
+    <legend>
+        Order Online
+    </legend>
+    <form id="order_online">
+        Buyer Name <br>
+        <input type="text" name="Name" id="order_input"><br><br>
+        Mobile No.<br>
+        <input type="number" name="Mobile" id="order_input"><br><br>
+        Choose sweets <br>
+        
+        <select name="Choose Sweets" name="Chosse sweets">
+            <option value="rasgulaa"> Rasgulaa</option>
+            <option value="sonpapdi">Sonpapdi </option>
+            <option value="Gulab-jamun"> Gulab-jamun</option>
+            <option value="Mava ki Barfi"> Mava ki Barfi</option>
+            <option value="Kaju ki Barfi"> Kaju ki Barfi</option>
+            <option value="Laddu"> Laddu</option>
+            <option value="Jalebi"> Jalebi</option>
+            <option value="Rashmalai"> Rashmalai</option>
+             <option value="Khirmohan"> Khirmohan</option>
+             
+        </select>
+        <br><br>
+        Quantity <br>
+        <input type="text" name="quantity" id="order_input">
+        <br><br>
+        Address <br>
+        <textarea name="address "></textarea><br><br>
+        <input type="submit" value="Order Now!" id="submit_btn">
+
+    </form>
+</fieldset>
+<div id="abt_us"> 
+<h1 id="abt-title">About us</h1>
+<hr>
+<p id="abt_text">
+    On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document.
+     You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. 
+    When you create pictures, charts, or diagrams, they also coordinate with your current document look.
+</p>
+</div>
+
+<div id="m_Sweets">
+    <h1 id="more_sweets">More Sweets</h1>
+    
+</div>
+
+<div id="sweets">
+    <img src="Image/alwari.png" id="sweet_pic">
+   <center><a href="#frm_box"> <button id="buy_btn">
+        Buy Now!
+    </button></a></center>
+</div>
+<div id="sweets">
+    <img src="Image/gajak.png" id="sweet_pic2">
+     <center><a href="#frm_box"> <button id="buy_btn">
+        Buy Now!
+    </button></a></center>
+</div>
+<div id="sweets">
+    <img src="Image/kaju.png" id="sweet_pic">
+    <center><a href="#frm_box"> <button id="buy_btn">
+        Buy Now!
+    </button></a></center>
+</div>
+<div id="sweets">
+    <img src="Image/mitai.png" id="sweet_pic">
+     <center><a href="#frm_box"> <button id="buy_btn">
+        Buy Now!
+    </button></a></center>
+</div>
+<div id="sweets_end">
+    <img src="Image/b.jpg" id="sweet_pic_end">
+     <center><a href="#frm_box"> <button id="buy_btn">
+        Buy Now!
+    </button></a></center>
+</div>
+
+</section>
+    </header>
+
+   <footer>
+    <div id="contact_us">
+        <h1 id="contect_title">Contect Us</h1>
+        <address id="contect_details">Website : sweetshoop.com</address>
+        <address id="contect_details">Phone No. : +91 8890256019 </address>
+        <address id="contect_details">Email Id :sweetshope303012@gmail.com </address>
+        <address id="contect_details"> Address :Dantli Goner road Jaipur-303012 </address>
+    </div>
+
+    <div id="social_link">
+       <h1 id="contect_title">Follow Us</h1>
+<h2 style="color: white;"> 05-25mint</h2>
+    </div>
+ 
+   </footer>
+    
+</body>
+</html>
